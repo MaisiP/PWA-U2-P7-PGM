@@ -64,7 +64,7 @@ function getList() {
         listPhoto.forEach(photo =>{
             
             let cardHTML = $(`
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 10rem;">
                     <img src="${photo.src}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">${photo.type}</h5>

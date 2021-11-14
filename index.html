@@ -14,7 +14,7 @@
 
 <body>
 
-    <h1 class="text-center">Acceso a cámara</h1>
+    <h1 class="text-center" style="background-color: #45B39F;">Acceso a cámara</h1>
 
     <div class="container">
         <div class="rom">
@@ -24,16 +24,24 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn btn-primary btn-block" id="btnCamera">Abrir cámara</button>
-                <button class="btn btn-primary btn-block" id="btnCameraBack">Cámara back</button>
-                <button class="btn btn-primary btn-block" id="btnTakePhoto">Tomar foto</button>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button class="btn btn-outline-warning " id="btnCamera">Frontal</button>
+                    <button class="btn btn-outline-info" id="btnCameraBack">Posterior</button>
+                  </div>
                 <br>
+                <div class="row justify-content-end">
+                    <button class="btn btn-success" id="btnTakePhoto">Tomar foto</button>
+                  </div>
+                
+                
             </div>
             <!-- <div class="col-12 text-center">
                 <img id="photoUser" src="images/user.png" width="300" height="300">
             </div>-->
-
-            <div class="col-12 center" id="cardPhotos"></div>
+            <br>
+            <div style="width: 1px;background-color: #000;"></div>
+            <h3 class="text-center" >Lista de fotos</h3>
+            <div class="col-12 container-fluid" id="cardPhotos"></div>
         </div>
     </div>
 
